@@ -4,13 +4,13 @@ provider "aws" {
 }
 
 #s3 backend block
-terraform {
-  backend "s3" {
-    bucket = "csarat424"
-    key    = "versioning.tfstate"
-    region = "us-east-1"
-  }
-}
+#terraform {
+  #backend "s3" {
+   # bucket = "csarat424"
+    #key    = "versioning.tfstate"
+    #region = "us-east-1"
+  #}
+#}
 
 #VPC Block
 resource "aws_vpc" "VPC_Terra" {
